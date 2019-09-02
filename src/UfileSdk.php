@@ -128,7 +128,7 @@ class UfileSdk
     {
         $resp = $this->httpClient->delete($key_name);
         $httpCode = $resp->getStatusCode();
-        if ($httpCode >= 200 && $httpCode < 300) {
+        if ($httpCode < 200 || $httpCode > 299) {
             throw new UfileSdkException("delete $key_name error :" . $resp->getStatusCode());
         }
         return true;
