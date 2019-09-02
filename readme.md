@@ -1,23 +1,27 @@
-# Ucloud ufile storage for laravel
-base on https://docs.ucloud.cn/api-docs/ufile-api/ 
+# Ucloud ufile storage for Laravel
+Base on: 
+* https://docs.ucloud.cn/api/ufile-api/
+* https://github.com/xujif/ucloud-ufile-sdk
+* https://github.com/xujif/ucloud-ufile-storage
 
 # Usage:
-register the `Xujif\UcloudUfileStorage\UfileServiceProvider::class;` in your app configuration file:
+register the `Jekhy\UcloudUfileStorage\UfileServiceProvider::class;` in your app configuration file:
 ```php
 'providers' => [
     // Other service providers...
-    Xujif\UcloudUfileStorage\UfileServiceProvider::class,
+    Jekhy\UcloudUfileStorage\UfileServiceProvider::class,
 ],
 ```
-config
+config/filesystems.php
 ```
-[
-    'ucloud-ufile'=>[
+'disks' => [
+    'yourDiskName'=>[
+        'driver' => 'ucloud-ufile',
         'bucket'=>'xxx',
         'public_key'=>'xxx',
         'secret_key'=>'xxx',
-        'suffix'=>'',
+        'suffix'=>'.ufile.ucloud.cn',
         'prefix'=>'',
-    ]
+    ],
 ]
 ```

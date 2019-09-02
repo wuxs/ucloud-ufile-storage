@@ -1,24 +1,26 @@
 {
-    "name": "xujif/ucloud-ufile-storage",
+    "name": "jekhy/ucloud-ufile-storage",
     "description": "ucloud-ufile-storage for laravel",
     "license": "MIT",
     "keywords": ["ucloud ufile storage laravel"],
     "authors": [
         {
-            "name": "xujif",
-            "email": "i@xujif.com"
+            "name": "jekhy",
+            "email": "info@jekhy.com"
         }
     ],
     "require": {
-        "php": ">=5.3.0",
+        "php": "^7.1.3",
         "league/flysystem": "^1.0",
         "illuminate/support": "5.*",
-        "xujif/ucloud-ufile-sdk": "~1.0"
+        "guzzlehttp/guzzle": "^6.0"
     },
-
+    "require-dev": {
+        "phpunit/phpunit": "^4.0"
+    },
     "autoload": {
         "psr-4": {
-            "Xujif\\UcloudUfileStorage\\": "src/"
+            "Jekhy\\UcloudUfileStorage\\": "src/"
         }
     }
 }
