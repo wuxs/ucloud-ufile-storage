@@ -1,5 +1,5 @@
 {
-    "name": "jekhy/ucloud-ufile-storage",
+    "name": "wuxs/ucloud-ufile-storage",
     "description": "ucloud-ufile-storage for laravel",
     "license": "MIT",
     "keywords": ["ucloud ufile storage laravel"],
@@ -12,7 +12,7 @@
     "require": {
         "php": "^7.1.3",
         "league/flysystem": "^1.0",
-        "illuminate/support": "5.*",
+        "illuminate/support": "^7.0",
         "guzzlehttp/guzzle": "^6.0"
     },
     "require-dev": {
