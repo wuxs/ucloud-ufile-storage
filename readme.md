@@ -1,4 +1,4 @@
-# Ucloud ufile storage for Laravel
+# Ucloud ufile storage for Laravel（更新依赖库版本）
 Base on: 
 * https://docs.ucloud.cn/api/ufile-api/
 * https://github.com/xujif/ucloud-ufile-sdk
